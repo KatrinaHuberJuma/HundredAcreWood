@@ -26,23 +26,28 @@ Creature.prototype.addSouth= function(creatureObj){
 
 
 var Player = function(){
-    this.move = function(creature){
-        var input = prompt("You are at " + creature.name + "'s home! enter n, s, e, or w to move, or hit x to quit");
+}
+
+
+Player.prototype.move = function(creature){
+        this.location = creature;
+        var input = prompt("You are at " + this.location.name + "'s home! enter n, s, e, or w to move, or hit x to quit");
         if (input == "n"){
-            return creature.north;
+            return this.location.north;
         }
         if (input == "s"){
-            return creature.south;
+            return this.location.south;
         }
         if (input == "e"){
-            return creature.east;
+            return this.location.east;
         }
         if (input == "w"){
-            return creature.west;
+            return this.location.west;
         } 
+        if (this.location === undefined){
+            alert("You have left the woods. ByeBye!")
+        }
         if (input == "x"){
             return false;
         }
     }
-}
-

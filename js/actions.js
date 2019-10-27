@@ -10,7 +10,7 @@ $(document).ready(function(){
             while (creature){
                 creature = player.move(creature);
             }
-            alert("jope you enjoyed your stroll!")
+            alert("You have left the forest. I hope you enjoyed your stroll!")
         }
 
     });
