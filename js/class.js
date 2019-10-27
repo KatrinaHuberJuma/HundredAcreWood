@@ -1,5 +1,8 @@
-var Creature = function(name){
+var Creature = function(name, greeting){
     this.name = name;
+    this.greet = function(){
+        return greeting;
+    }
     
 }
 
@@ -31,7 +34,8 @@ var Player = function(){
 
 Player.prototype.move = function(creature){
         this.location = creature;
-        var input = prompt("You are at " + this.location.name + "'s home! enter n, s, e, or w to move, or hit x to quit");
+        
+        var input = prompt(this.location.greet() + " You are at " + this.location.name + "'s home! enter n, s, e, or w to move, or hit x to quit");
         if (input == "n"){
             return this.location.north;
         }
