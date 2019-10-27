@@ -25,5 +25,24 @@ Creature.prototype.addSouth= function(creatureObj){
 }
 
 
-
+var Player = function(){
+    this.move = function(creature){
+        var input = prompt("You are at " + creature.name + "'s home! enter n, s, e, or w to move, or hit x to quit");
+        if (input == "n"){
+            return creature.north;
+        }
+        if (input == "s"){
+            return creature.south;
+        }
+        if (input == "e"){
+            return creature.east;
+        }
+        if (input == "w"){
+            return creature.west;
+        } 
+        if (input == "x"){
+            return false;
+        }
+    }
+}
 

@@ -15,16 +15,16 @@ winnie.addEast(bees).addSouth(tigger).addWest(piglet);
 piglet.addNorth(owl);
 rabbit.addSouth(bees).addEast(gopher)
 var wood = {
-    hef: hef,
-    eeyore: eeyore,
-    kanga: kanga,
-    owl: owl,
-    chris: chris,
-    rabbit: rabbit,
-    gopher: gopher,
-    winnie: winnie,
-    piglet: piglet,
-    bees: bees,
-    tigger: tigger
+    "hef": hef,
+    "eeyore": eeyore,
+    "kanga": kanga,
+    "owl": owl,
+    "chris": chris,
+    "rabbit": rabbit,
+    "gopher": gopher,
+    "winnie": winnie,
+    "piglet": piglet,
+    "bees": bees,
+    "tigger": tigger
 
 }
